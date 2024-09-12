@@ -1,0 +1,101 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(1.5) translateY(-10%);
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+.logo-container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  z-index: 1000;
+
+  padding: 10px; /* Added for debugging */
+}
+
+.main-logo {
+  max-width: 300px; /* Adjust as needed */
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below the image */
+  transition: all 0.5s ease;
+}
+
+.navbar {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s ease;
+}
+
+.logo { 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px; /* Added for debugging */
+}
+
+.nav-logo {
+  max-width: 100px; /* Adjust as needed */
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links { 
+  display: flex; 
+  gap: 16px; 
+}
+
+.nav-links a { 
+  text-decoration: none; 
+  color: #333; 
+}
+
+.contact-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.content { 
+  height: 200vh; 
+}
+
+.abtimg {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+}
