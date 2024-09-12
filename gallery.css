@@ -56,10 +56,10 @@ body {
   }
 
 .contact-btn {
-    background-color: black;
+    background-color: #333;
     color: #eee;
     padding: 8px 16px;
-    border: 1px solid #000000;
+    
     border-radius: 20px;
     text-decoration: none;
 }
@@ -80,17 +80,17 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    padding: 80px 10px 10px; /* Added top padding to account for fixed navbar */
+    padding: 80px 10px 10px; 
     transition: 0.3s;
-    max-width: 1600px; /* Limit maximum width */
-    margin: 0 auto; /* Center the gallery */
+    max-width: 1600px; 
+    margin: 0 auto; 
 }
 
 .gallery__link {
     overflow: hidden;
-    aspect-ratio: 1 / 1; /* Makes the container square */
-    max-height: none; /* Remove max-height constraint */
-    border-radius: 10px; /* Add rounded corners to the container */
+    aspect-ratio: 1 / 1; 
+    max-height: none; 
+    border-radius: 10px; 
     opacity: 0;
     animation: moveIn 0.5s ease-out forwards;
 }
@@ -107,7 +107,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
-    border-radius: 10px; /* Add rounded corners to the image */
+    border-radius: 10px; 
 }
 
 .gallery__image:hover {
@@ -126,7 +126,7 @@ body {
     opacity: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
     transition: 0.3s;
-    border-bottom-left-radius: 10px; /* Round the bottom corners of the caption */
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 

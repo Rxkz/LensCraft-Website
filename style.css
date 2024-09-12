@@ -30,15 +30,14 @@ body, html {
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
   z-index: 1000;
-
-  padding: 10px; /* Added for debugging */
+  padding: 10px;
 }
 
 .main-logo {
-  max-width: 300px; /* Adjust as needed */
-  width: 100%; /* Ensure the image takes full width of its container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any extra space below the image */
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
   transition: all 0.5s ease;
 }
 
@@ -55,30 +54,28 @@ body, html {
   transition: top 0.3s ease;
 }
 
-.logo { 
+.logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
-  padding: 5px; /* Added for debugging */
 }
 
 .nav-logo {
-  max-width: 100px; /* Adjust as needed */
-  width: 100%; /* Ensure the image takes full width of its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100px;
+  width: 100%;
+  height: auto;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.nav-links { 
-  display: flex; 
-  gap: 16px; 
+.nav-links {
+  display: flex;
+  gap: 16px;
 }
 
-.nav-links a { 
-  text-decoration: none; 
-  color: #333; 
+.nav-links a {
+  text-decoration: none;
+  color: #333;
 }
 
 .contact-btn {
@@ -89,8 +86,8 @@ body, html {
   text-decoration: none;
 }
 
-.content { 
-  height: 200vh; 
+.content {
+  height: 200vh;
 }
 
 .abtimg {
@@ -99,3 +96,23 @@ body, html {
   height: 100%;
   background-position: center top;
 }
+
+.text-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.text-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+ 
+}
+
+

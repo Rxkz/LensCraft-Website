@@ -77,7 +77,7 @@ body, html {
   padding: 20px;
   position: relative;
   z-index: 1;
-  padding-top: 100px; /* Adjusted to account for fixed navbar */
+  padding-top: 100px; 
 }
 
 .content {
@@ -205,7 +205,7 @@ p {
   }
 
   .container {
-      padding-top: 150px; /* Adjusted for stacked navbar on mobile */
+      padding-top: 150px; 
   }
 
   .studio-images {
